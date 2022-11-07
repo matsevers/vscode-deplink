@@ -4,7 +4,7 @@ import LinkProvider from './LinkProvider.interface';
 export class PubSpecLinkProvider implements vscode.DocumentLinkProvider, LinkProvider {
     registryRootUrl = "https://pub.dev/packages";
 
-    #yaml = require('yaml')
+    #yaml = require('yaml');
 
     provideDocumentLinks(document: vscode.TextDocument, token: vscode.CancellationToken): vscode.ProviderResult<vscode.DocumentLink[]> {
         const detectedLinks: vscode.DocumentLink[] = [];
@@ -14,7 +14,6 @@ export class PubSpecLinkProvider implements vscode.DocumentLinkProvider, LinkPro
             const parsedYaml = this.#yaml.parse(text);
             const allDependencies = Array.from(new Set(Object.keys(parsedYaml.dependencies).concat(Object.keys(parsedYaml.dev_dependencies)))) as string[];
 
-            console.log(allDependencies);
             for (let dependencyName of allDependencies) {
                 var regex = new RegExp(dependencyName, 'gi'), result, indices = [];
 

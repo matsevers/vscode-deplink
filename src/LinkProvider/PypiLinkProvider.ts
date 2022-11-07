@@ -33,7 +33,6 @@ export class PypiLinkProvider implements vscode.DocumentLinkProvider, LinkProvid
 
 			return detectedLinks;
 		} catch (e) {
-			console.log("Cannot parse file", document.fileName)
 			return [];
 		}
 	}

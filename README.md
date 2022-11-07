@@ -1,4 +1,9 @@
 # DepLink
+[![badge-issues](https://img.shields.io/github/issues/matsevers/vscode-deplink?style=flat-square)](https://github.com/matsevers/vscode-deplink)
+[![badge-stars](https://img.shields.io/github/stars/matsevers/vscode-deplink?style=flat-square)](https://github.com/matsevers/vscode-deplink)
+[![badge-license](https://img.shields.io/github/license/matsevers/vscode-deplink?style=flat-square)](https://github.com/matsevers/vscode-deplink)
+
+
 Deplink creates HTTP links for many package managers to access the package pages directly.
 ## Supported Package Managers
 - NPM 
@@ -6,8 +11,8 @@ Deplink creates HTTP links for many package managers to access the package pages
 - pub.dev
 - Composer
 - Cargo
-## For more information
-
+# For more information
+* [vscode-deplink (Repository)](https://github.com/matsevers/vscode-deplink)
 * [Mats Evers (Developer)](https://matsevers.de)
 
 

@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import LinkProvider from './LinkProvider.interface';
 
 export class NpmLinkProvider implements vscode.DocumentLinkProvider, LinkProvider {
-    registryRootUrl = "https://crates.io/crates";
+    registryRootUrl = "https://www.npmjs.com/package";
 
 	provideDocumentLinks(document: vscode.TextDocument, token: vscode.CancellationToken): vscode.ProviderResult<vscode.DocumentLink[]> {
 		const detectedLinks: vscode.DocumentLink[] = [];
